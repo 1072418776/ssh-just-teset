@@ -1,0 +1,49 @@
+.bigbox{
+    width:400px;
+ height:300px;
+ margin: 30px auto;
+overflow:hidden;
+}
+.div{
+ width:4000px;
+ height:300px;
+ position:relative;
+   
+}
+.bigbox:before{
+  position:absolute;
+ content:"<";
+ display:block;
+ width:20px;
+ height:30px;
+ top:135px;
+ background:grey;
+ font:20px;
+ color: white;
+ cursor:pointer;
+ line-height:30px;
+box-shadow: 2px 2px 5px #bbb;
+z-index:2;
+
+}
+.bigbox:after{
+  position:absolute;
+ content:">";
+ display:block;
+ width:20px;
+ height:30px;
+top:135px;
+margin-left:380px;
+ background:grey;
+ font:20px;
+ color: white;
+ cursor:pointer;
+line-height:30px;
+box-shadow: -2px 2px 5px #bbb;
+
+}
+.img{
+ width:400px;
+ height:100%;
+ float:left;
+}
